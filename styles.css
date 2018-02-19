@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    height: 100%;
+}
+
+h1 p { 
+    color: white;
+}
+
+.photo-gallery { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.photo {
+    flex-grow: 1;
+    width: 25%;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.column-1 {
+    width: 50%;
+}
+
+.column-2 {
+    width: 50%;
+    height: 100%;
+}
