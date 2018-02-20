@@ -1,5 +1,8 @@
 #!/bin/bash
-
+# HOW TO USE THIS:
+#   Go to the bottom of the page and click on the "bash" tab
+#   type ./update "SOME MESSAGE"
+#   SOME MESSAGE must be in quotes
 git add .
 git commit -m"$1"
 git push origin master
