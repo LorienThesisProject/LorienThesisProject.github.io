@@ -1,1 +1,2 @@
-My awesome thesis
+## My awesome thesis
+
