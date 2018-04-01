@@ -22,13 +22,20 @@ html {
 }
 /* Remove scroll */
 
-
-
 /* Photo Gallery */
 .photo-gallery { 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.photo {
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.photo:hover {
+    opacity: 0.5;
 }
 
 @media (min-width:320px)  { 
@@ -56,6 +63,7 @@ html {
 img {
     width: 100%;
 }
+
 /* End Photo Gallery */
 
 /* Video Display */
@@ -97,7 +105,6 @@ img {
 }
 
 /* End Video Display */
-
 
 /* Probably delete */
 .media {
