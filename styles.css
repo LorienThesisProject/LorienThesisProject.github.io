@@ -49,7 +49,7 @@ html {
 @media (min-width:961px)  { 
     .photo {
         flex-grow: 1;
-        width: 25%;
+        width: 33%;
     }
 }
 
