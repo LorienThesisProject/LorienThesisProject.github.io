@@ -145,3 +145,20 @@ img {
     padding: 10px 10px 10px;
 }
 /* END HEADER */
+
+/* PHOTOBOOTH */
+.photobooth-carousel-container {
+    width: 30%; /* for example */
+    margin: auto;
+    margin-top: 2%;
+}
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+width: 100%; /* use this, or not */
+margin: auto;
+}
+
+.carousel {
+    overflow: hidden;
+}
