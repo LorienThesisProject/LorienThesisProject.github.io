@@ -160,3 +160,47 @@ img {
 .slick-slide:not(.slick-current) {
     opacity: .3;
 }
+
+/* VIDEO AT THE TOP */
+.media-overlay {
+    position: absolute;
+    top: 85%;
+    left: 40%;
+}
+
+.media-overlay-contents {
+    text-align: center;
+}
+
+.hear-their-stories {
+    color: black;
+}
+
+@media (max-width:481px)  { 
+    /* smartphones, iPhone, portrait 480x320 phones */
+    .full-screen-video {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.media-overlay-contents:hover {
+	animation: bounce 1s;
+}
