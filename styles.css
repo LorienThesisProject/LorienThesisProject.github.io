@@ -156,3 +156,7 @@ img {
 .slick-slide img{
   width:100%;
 }
+
+.slick-slide:not(.slick-current) {
+    opacity: .3;
+}
