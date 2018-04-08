@@ -8,7 +8,7 @@
     </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">The Heard</a>
+          <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,13 +31,39 @@
         </nav>
         <div class="wrapper">
           <div class="carousel">
-            <div><img src="img/photobooth/WelcomeBaby1.jpg"></div>
-            <div><img src="img/photobooth/WelcomeBaby2.jpg"></div>
-            <div><img src="img/photobooth/JourneyOfHope1.jpg"></div>
-            <div><img src="img/photobooth/JourneyOfHope2.jpg"></div>
+            <div><img data-lazy="/img/photobooth/WelcomeBaby1.jpg"></div>
+            <div><img data-lazy="/img/photobooth/WelcomeBaby2.jpg"></div>
+            <div><img data-lazy="/img/photobooth/JourneyOfHope1.jpg"></div>
+            <div><img data-lazy="/img/photobooth/JourneyOfHope2.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30411902_10156083123656996_7762150727404748800_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30412258_10156083124006996_7264668062828199936_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30412538_10156083124081996_7530783570768429056_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30412618_10156083124621996_4050073191404535808_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30414535_10156083123766996_4819173204142587904_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30414537_10156083123541996_7062824236506677248_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30415569_10156083124156996_7652212711522041856_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30440904_10156083124271996_4486961306317881344_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30441027_10156083124211996_6867591567444541440_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30441212_10156083133686996_1875724376939167744_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30442571_10156083123871996_8988877589976186880_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30442800_10156083135586996_2592901138466471936_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30442925_10156083123346996_6299653632279183360_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30443058_10156083123111996_1664634095914713088_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30443186_10156083123746996_9125907288899452928_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30443242_10156083133146996_2721819924795228160_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30443309_10156083133936996_4756593426105892864_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30515595_10156083123811996_6591422309863522304_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30515931_10156083123476996_3222277683152945152_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30516475_10156083124336996_6809193184883638272_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30516638_10156083134206996_5544118363212480512_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30531392_10156083135506996_8527291776728301568_o.jpg"></div>
+            <div><img data-lazy="/img/photobooth/PhotoBooth30581500_10156083123196996_4783011284612284416_o.jpg"></div>
           </div>
         </div>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>      
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
@@ -55,7 +81,8 @@
             dots:true,
             centerMode: true,
             focusOnSelect: true,
-            infinite: true
+            infinite: true,
+            lazyLoad: 'ondemand'
           });
         });
       </script>
