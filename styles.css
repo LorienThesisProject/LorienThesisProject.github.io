@@ -70,13 +70,13 @@ img {
 /* End Photo Gallery */
 
 /* Video Display */
-.container {
+.flexbox-container {
     display: flex;
     justify-content: flex-start;
 }
 
 @media screen and (max-width:1023px) { 
-    .container {
+    .flexbox-container {
         flex-direction: column-reverse;
     }
     .column-1 {
@@ -91,7 +91,7 @@ img {
 }
 
 @media screen and (min-width:1024px) { 
-    .container {
+    .flexbox-container {
         flex-direction: row;
     }
     
