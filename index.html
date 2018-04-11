@@ -4,7 +4,6 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=0.5,maximum-scale=3.0">
 </head>
@@ -19,7 +18,7 @@
             </div>
             <div class="media-play-overlay">
                 <div class="media-overlay-play-button">
-                    <div id="playButton" class="playButton" onclick="playPause()"></div>
+                    <div id="playButton" class="playButton"></div>
                 </div>
                 <div class="enable-audio-text">
                     <p>Please enable audio.</p>
@@ -117,33 +116,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
-    <script>
-        $('.media-overlay-contents').click(() => {
-            document.querySelector('.navbar').scrollIntoView({
-                behavior: 'smooth',
-                block: "start"
-            });
-        });
-        var video = document.getElementById("myVideo");
-        let videoHasBeenPlayed = false;
-
-        function playPause() {
-            var el = document.getElementById("playButton");
-            videoHasBeenPlayed = true;
-            if (videoHasBeenPlayed) {
-                $(".media-overlay-contents").css('visibility', 'visible');
-            }
-            if (video.paused) {
-                video.play();
-                $(".media-play-overlay").css('visibility', 'hidden');
-            }
-            else {
-                video.pause();
-                $(".media-play-overlay").css('visibility', 'visible');
-            }
-        }
-        video.addEventListener("click", playPause, false);
-    </script>
+    <script src="/scripts/fullScreenVideo.js" type="text/javascript"></script>
 </body>
 <html>
