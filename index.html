@@ -10,12 +10,20 @@
         <div class="full-screen-video">
             <div class="media">
                 <div class="media__video">
-                    <video autoplay id="myVideo" controls>
+                    <video id="myVideo" controls>
                         <source src="/img/RefugeeIntro_mixdown_1.mp4" type="video/mp4" >
                     </video>
                 </div>
+                <div class="media-play-overlay">
+                    <div class="media-overlay-play-button">
+                        <div id="playButton" class="playButton" onclick="playPause()"></div>
+                    </div>
+                    <div class="enable-audio-text">
+                        <p>Please enable audio.</p>
+                    </div>
+                </div>
                 <div class="media-overlay">
-                    <div class="media-overlay-contents">
+                    <div class="media-overlay-contents" style="visibility:hidden;">
                         <h1 class='hear-their-stories'>Hear their stories</h1>
                         <i class="fa fa-angle-down" style="font-size:48px; color:white;"></i>
                     </div>
@@ -110,13 +118,30 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
         <script>
-            
             $('.media-overlay-contents').click(() => {
                 document.querySelector('.navbar').scrollIntoView({ 
                   behavior: 'smooth',
                   block: "start"
                 });
             });
+            var video = document.getElementById("myVideo");
+            let videoHasBeenPlayed = false;
+
+            function playPause() {
+              var el = document.getElementById("playButton");
+              videoHasBeenPlayed = true;
+              if (videoHasBeenPlayed) {
+                $(".media-overlay-contents").css('visibility', 'visible');
+              }
+              if (video.paused) {
+                video.play();
+                $(".media-play-overlay").css('visibility', 'hidden');
+              } else {
+                video.pause();
+                $(".media-play-overlay").css('visibility', 'visible');
+              }
+            }
+            video.addEventListener("click", playPause, false);
         </script>
     </body>
 <html>
