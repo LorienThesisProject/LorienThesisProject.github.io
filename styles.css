@@ -254,3 +254,7 @@ img {
     text-align: center;
     /*padding-bottom: 400px;*/
 }
+
+.slick-slide {
+    height: inherit !important;
+}
