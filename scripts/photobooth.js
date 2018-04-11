@@ -1,4 +1,3 @@
-
 /*global $*/
 /*global navigator*/
 /* Must used after jquery import */

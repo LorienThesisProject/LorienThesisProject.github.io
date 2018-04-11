@@ -3,7 +3,7 @@
 $(document).ready(function() {
     // Constants
     const secondsToWaitBeforeShowingHearTheirStories = 30;
-    
+
     var video = document.getElementById("myVideo");
     let videoHasBeenPlayed = false;
 
@@ -15,7 +15,7 @@ $(document).ready(function() {
                 $(".media-overlay-contents").css('visibility', 'visible');
             }, secondsToWaitBeforeShowingHearTheirStories * 1000);
         }
-        
+
         if (video.paused) {
             video.play();
             $(".media-play-overlay").css('visibility', 'hidden');
@@ -33,8 +33,8 @@ $(document).ready(function() {
             block: "start"
         });
     });
-    
+
     $('#playButton').click(playPause);
-    
+
     $('#myVideo').click(playPause);
 });
