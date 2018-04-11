@@ -31,12 +31,12 @@ html {
     justify-content: center;
 }
 
-.photo {
+.photo a {
     transition: .5s ease;
     backface-visibility: hidden;
 }
 
-.photo:hover {
+.photo:hover a {
     opacity: 0.5;
 }
 
