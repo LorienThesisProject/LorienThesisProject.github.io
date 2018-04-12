@@ -286,3 +286,7 @@ video {
 .slick-slide {
     height: inherit !important;
 }
+
+.container {
+    padding-top: 20px;
+}
