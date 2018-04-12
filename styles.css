@@ -301,3 +301,8 @@ video {
 .container {
     padding-top: 20px;
 }
+
+.story-map {
+    width: 80%;
+    margin: auto;
+}
