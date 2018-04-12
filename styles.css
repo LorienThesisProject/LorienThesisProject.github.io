@@ -9,6 +9,9 @@ h2,
 h3,
 h4,
 h5,
+ul,
+ol,
+li,
 p,
 span {
     color: white;
@@ -43,6 +46,14 @@ html {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+}
+
+.photo-gallery.resource-gallery {
+    justify-content: space-between;
+}
+
+.photo.resource-photo {
+    padding: 10px;
 }
 
 .photo a {
@@ -140,7 +151,7 @@ img {
     height: 0;
     width: 100%;
     overflow: hidden;
-    background: black;
+    background: gray;
 }
 
 .media__video iframe,
@@ -285,8 +296,4 @@ video {
 
 .slick-slide {
     height: inherit !important;
-}
-
-.container {
-    padding-top: 20px;
 }
