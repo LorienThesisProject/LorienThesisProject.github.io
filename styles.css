@@ -56,6 +56,10 @@ html {
     padding: 10px;
 }
 
+.photo.resource-photo p {
+    padding-top: 20px;
+}
+
 .photo a {
     transition: .5s ease;
     backface-visibility: hidden;
