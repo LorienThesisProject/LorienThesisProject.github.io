@@ -151,7 +151,7 @@ img {
     height: 0;
     width: 100%;
     overflow: hidden;
-    background: gray;
+    background: black;
 }
 
 .media__video iframe,
