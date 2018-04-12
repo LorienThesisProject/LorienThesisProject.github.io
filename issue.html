@@ -1,55 +1,80 @@
 <html>
-
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">The Heard</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">The Heard</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/resources.html">Resources</a>
-        </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="/issue.html">The Issue</a>
-            <a class="dropdown-item" href="/project.html">The Project</a>
-            <a class="dropdown-item" href="/area.html">The Area</a>
-            <a class="dropdown-item" href="/reflections.html">Reflections</a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/resources.html">Resources</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="/issue.html">The Issue</a>
+                  <a class="dropdown-item" href="/project.html">The Project</a>
+                  <a class="dropdown-item" href="/area.html">The Area</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/reflections.html"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Get In Touch</a>
+              </li>
+            </ul>
           </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Explore</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="/photobooth.html">Photo Booth</a>
-            <a class="dropdown-item" href="/recipes.html">Recipes</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact.html">Get In Touch</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container">
-    <h1>Refugees in America</p>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-
+        </nav>
+        <div class="container">
+          <p>
+            There are more than 65 million people worldwide who have been displaced either within
+their own country or outside of it, resulting in what the UNHCR calls “immense human
+suffering.” According to the National Public Radio, “one in every 113 people on Earth has now
+been driven from their home by persecution, conflict and violence or human rights violations,”
+and that every twenty-four minutes, a person is forced to flee their home. The UN says that this
+situation is unprecedented in world history (Domonoske). In stark contrast to the number of 
+displaced people, the number of those who are granted asylum is far lower. A mere 0.66% of
+the world’s refugees - the “lucky ones” - are resettled.
+</p>
+<p>
+Of the 50 million resettled refugees estimated by UNHCR, the United States has received
+approximately 3 million since 1975. Some 100,000 are resettled in the United States every year.
+Although the September 11 attacks dramatically decreased the number of refugees who were
+allowed to enter the United States, the years following have seen a steady increase in the number
+of individuals welcomed to our haven. From 1990-1995, there were some 112,000 refugees
+brought into the US each year. This number dropped to 27,000 following 9/11, but has trended
+upward since, close to the six-figure mark (Krogstad and Radford).
+Under the current presidential administration, there have been several attempts to block
+as many refugees as possible, putting individuals from certain countries through “extreme
+vetting.” In addition to travel bans, President Trump has set caps on the number of refugees that
+can be accepted. Though presidents were given the power to do this in 1980, President Trump
+has set historically low numbers. From his inauguration day to December 31, 2017, 29,022
+refugees were accepted - nearly as low as the 27,000 admitted in the year following the
+September 11th attacks (USA Today).
+</p>
+<p>
+Refugee acceptance is expected to diminish to less than half that of previous
+administrations. For comparison, even with lows following 9/11, the average number of
+refugees admitted per year has been 75,000. President Trump has placed a 45,000-person limit
+for 2018, a number that he is far from reaching.  In the fiscal year to date (October through
+March) only 10,548 refugees have been admitted to the United States (Refugee Processing
+Center).
+          </p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 </html>
+    
