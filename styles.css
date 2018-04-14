@@ -113,7 +113,6 @@ img {
     }
     .column-1 {
         width: 100%;
-        max-height: 480px;
     }
 
     .column-2 {
@@ -130,7 +129,6 @@ img {
     .column-1 {
         align-self: center;
         flex: 1;
-        overflow: scroll;
     }
 
     .column-2 {
@@ -144,7 +142,6 @@ img {
 /* Probably delete */
 
 .media {
-    /*max-width: 800px;*/
     width: 100%;
 }
 
@@ -307,6 +304,13 @@ video {
 }
 
 .story-map {
+    padding-top: 20px;
     width: 50%;
     margin: auto;
+}
+
+@media screen and (max-width:1023px) {
+    .story-map {
+        width: 80%;
+    }
 }
