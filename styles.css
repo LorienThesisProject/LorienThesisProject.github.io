@@ -143,6 +143,7 @@ img {
 
 .media {
     width: 100%;
+    display: block;
 }
 
 .media__video {
@@ -216,6 +217,11 @@ video {
 
 .hear-their-stories {
     color: white;
+}
+
+.full-screen-video {
+    height: 100%;
+    width: 100%;
 }
 
 @media (max-width:481px) {
@@ -292,7 +298,6 @@ video {
 
 .enable-audio-text {
     text-align: center;
-    /*padding-bottom: 400px;*/
 }
 
 .slick-slide {
@@ -312,5 +317,12 @@ video {
 @media screen and (max-width:1023px) {
     .story-map {
         width: 80%;
+    }
+}
+
+/* Firefox patches */
+@-moz-document url-prefix() {
+    .enable-audio-text {
+        padding-top: 80px;
     }
 }
