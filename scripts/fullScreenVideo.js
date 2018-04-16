@@ -2,7 +2,7 @@
 /* Must be included below jquery */
 $(document).ready(function() {
     // Constants
-    const secondsToWaitBeforeShowingHearTheirStories = 105;
+    const secondsToWaitBeforeShowingHearTheirStories = 5;
 
     var video = document.getElementById("myVideo");
     let videoHasBeenPlayed = false;
